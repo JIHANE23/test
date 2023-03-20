@@ -10,7 +10,6 @@ void push(struct stack *A,int data){
     A->n++;
     A->arr=realloc(A->arr,A->n*sizeof(int));
     A->arr[A->n-1]=data;
-    count++;
     if(data > A->n){
         A->arr=realloc(A->arr, 2*A->n*sizeof(int));
         A->arr[A->n]=data;
